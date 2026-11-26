@@ -11,9 +11,9 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600&family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400;1,500&family=Pinyon+Script&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet" />
-  <script type="module" crossorigin src="./assets/index-C5eSaVc-.js"></script>
-  <link rel="modulepreload" crossorigin href="./assets/cart-B9ZdU5UE.js">
-  <link rel="stylesheet" crossorigin href="./assets/cart-CdO77SR7.css">
+  <script type="module" crossorigin src="./assets/index-NW9r28Tl.js"></script>
+  <link rel="modulepreload" crossorigin href="./assets/cart-COzjqDFz.js">
+  <link rel="stylesheet" crossorigin href="./assets/cart-B-7jgr4g.css">
 </head>
 <body data-tone="dark" data-variant="editoriale">
   <canvas id="scene" aria-hidden="true"></canvas>
@@ -29,8 +29,8 @@
     </nav>
     <div class="header-right">
       <a class="header-link link-line" href="contatti.html">Contatti</a>
-      <a class="header-link link-line" href="prodotto.html?p=gin-50">Acquista ora</a>
-      <button class="cart-btn" type="button" data-cart-open aria-label="Apri il carrello"><span class="cart-label">Carrello</span><span class="cart-count" data-cart-count>0</span></button>
+      <a class="header-link link-line h-buy" href="prodotto.html?p=gin-50">Acquista ora</a>
+      <button class="cart-btn" type="button" data-cart-open aria-label="Apri il carrello"><svg class="cart-ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 8h14l-1.2 11.2a1 1 0 0 1-1 .8H7.2a1 1 0 0 1-1-.8L5 8Z"/><path d="M9 10V6.5a3 3 0 0 1 6 0V10"/></svg><span class="cart-label">Carrello</span><span class="cart-count" data-cart-count>0</span></button>
       <button class="menu-btn" type="button" id="menu-open" aria-expanded="false" aria-controls="menu"><span class="menu-lines" aria-hidden="true"><i></i><i></i></span><span class="menu-label">Menu</span></button>
     </div>
   </header>
@@ -40,7 +40,8 @@
       <div class="panel-inner">
         <p class="eyebrow"><span class="idx">01</span><span class="eb-text">London Dry Gin · Lago Sebino</span></p>
         <h1 id="p0"><span class="l"><span>Un viaggio</span></span><span class="l"><span>nel <em>gusto,</em></span></span><span class="l"><span><i class="script">sorso dopo sorso</i></span></span></h1>
-        <p class="lead reveal-words">Tre amici, tante prove, una ricetta che li ha lasciati senza parole. Dodici botaniche che sanno di tavole lunghe, di brindisi e di sere d'estate sul lago.</p>
+        <p class="lead m-only">Tre amici, una ricetta, dodici botaniche: il gin delle sere d'estate sul lago.</p>
+        <p class="lead reveal-words d-only">Tre amici, tante prove, una ricetta che li ha lasciati senza parole. Dodici botaniche che sanno di tavole lunghe, di brindisi e di sere d'estate sul lago.</p>
         <dl class="specs">
           <div><dt>Gradazione</dt><dd><b data-count="43">43</b><small>% vol</small></dd></div>
           <div><dt>Botaniche</dt><dd><b data-count="12">12</b><small>dal ginepro al sale rosa</small></dd></div>
@@ -57,7 +58,8 @@
       <div class="panel-inner">
         <p class="eyebrow"><span class="idx">02</span><span class="eb-text">Ispirato al Lago Sebino</span></p>
         <h2 id="p1"><span class="l"><span>Un tuffo dove</span></span><span class="l"><span>l'acqua incontra</span></span><span class="l"><span>la <i class="script">terra</i></span></span></h2>
-        <p class="lead reveal-words">Gincana nasce sul Lago d'Iseo, che qui tutti chiamano Sebino. È lì che tre amici hanno cercato la loro ricetta: le sere sull'acqua, il vento che cala al tramonto, gli aperitivi che non finiscono mai. Il gin è ispirato a quel lago e lo racconta in tre tempi.</p>
+        <p class="lead m-only">Gincana nasce sul Lago d'Iseo, il Sebino. Tre amici, le sere sull'acqua: il gin è ispirato a quel lago.</p>
+        <p class="lead reveal-words d-only">Gincana nasce sul Lago d'Iseo, che qui tutti chiamano Sebino. È lì che tre amici hanno cercato la loro ricetta: le sere sull'acqua, il vento che cala al tramonto, gli aperitivi che non finiscono mai. Il gin è ispirato a quel lago e lo racconta in tre tempi.</p>
         <p class="quote reveal-words">«Come il vento che increspa il lago la sera.»</p>
         <ol class="journey" aria-label="Il sorso in tre tempi">
           <li><span class="j-n">I</span><b>Secco</b><small>Il ginepro apre deciso, il pepe gli dà carattere.</small></li>
@@ -183,6 +185,13 @@
       </nav>
       <aside class="menu-side">
         <a class="menu-shop" href="prodotto.html?p=gin-50"><span>Acquista ora</span><i class="script">London Dry Gin</i></a>
+        <!-- telefono (26/11): nel menu si compra, non si naviga tra i capitoli -->
+        <nav class="menu-buy" aria-label="Acquista">
+          <a href="prodotto.html?p=gin-50"><span class="m-t">London Dry Gin</span><small>50 cl · €35</small></a>
+          <a href="prodotto.html?p=gin-20"><span class="m-t">London Dry Gin</span><small>20 cl · €22</small></a>
+          <a href="prodotto.html?p=marmellata"><span class="m-t">Marmellata</span><small>220 g · €16</small></a>
+          <button type="button" id="menu-cart"><span class="m-t">Il tuo carrello</span><small data-cart-count></small></button>
+        </nav>
         <p><a href="contatti.html">Contatti</a><br /><a href="mailto:info@gincana.it">info@gincana.it</a><br /><a href="https://www.instagram.com/gincana.londondrygin/" target="_blank" rel="noopener">Instagram</a></p>
         <p class="menu-note">Spedizione gratuita sopra €150</p>
       </aside>
