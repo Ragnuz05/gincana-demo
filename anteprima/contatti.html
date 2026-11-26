@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="it">
+<head>
+  <meta name="robots" content="noindex, nofollow" />
+  <meta charset="utf-8" />
+  <script>try{if(sessionStorage.getItem("gc-pt"))document.documentElement.setAttribute("data-pt","");if(localStorage.getItem("gincana-age")==="ok")document.documentElement.setAttribute("data-age-ok","")}catch(e){}</script>
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>Contatti · Gincana</title>
+  <meta name="description" content="Contatta Gincana, London Dry Gin ispirato al Lago Sebino: richiedi informazioni, ordini per eventi e punti vendita. Ome (BS), Lun–Ven 10:00–18:00." />
+  <meta name="theme-color" content="#0f140f" />
+  <link rel="icon" href="img/medaglione.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600&family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400;1,500&family=Pinyon+Script&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <script type="module" crossorigin src="./assets/contatti-CAA9VhXm.js"></script>
+  <link rel="modulepreload" crossorigin href="./assets/cart-DpD7hsn4.js">
+  <link rel="stylesheet" crossorigin href="./assets/cart-BZKIj5uR.css">
+</head>
+<body data-page="shop" data-variant="editoriale">
+  <div class="gc-grain-layer" aria-hidden="true"></div>
+
+  <header class="s-header">
+    <a class="brand" href="./" aria-label="Gincana, torna alla home"><span class="foil">GINCANA</span></a>
+    <nav aria-label="Sito">
+      <a class="s-back" href="./">Home</a>
+      <a href="prodotto.html?p=gin-50">Shop</a>
+      <a href="contatti.html" aria-current="page">Contatti</a>
+    </nav>
+    <div class="lang-switch" data-lang-switch role="group" aria-label="Lingua"></div>
+    <button class="s-cart" type="button" data-cart-open aria-label="Apri il carrello">Carrello <span data-cart-count data-empty></span></button>
+  </header>
+
+  <ol class="crumbs" aria-label="Percorso">
+    <li><a href="./" class="s-back">Torna alla home</a></li>
+    <li aria-current="page">Contatti</li>
+  </ol>
+
+  <main class="ct">
+    <section class="ct-hero" aria-labelledby="ct-title">
+      <p class="s-eyebrow" data-reveal>Contatti</p>
+      <h1 id="ct-title" class="ct-title" data-reveal-lines><span class="rv-line"><span>Scrivici,</span></span><span class="rv-line" style="--d:1"><span>ti rispondiamo <i class="script">noi</i></span></span></h1>
+      <p class="ct-lead" data-reveal style="--d:2">Una domanda sul gin, un ordine per un evento, un locale che vorrebbe Gincana al bancone: scrivici e ti rispondiamo noi, nei giorni lavorativi.</p>
+    </section>
+
+    <section class="ct-grid">
+      <form class="ct-form" id="ct-form" novalidate data-reveal style="--d:3" aria-labelledby="ct-form-t">
+        <h2 class="ct-h2" id="ct-form-t">Richiedi informazioni</h2>
+        <div class="fields">
+          <div class="field half"><label for="ct-nome">Nome</label><input id="ct-nome" name="nome" autocomplete="given-name" required /><span class="err"></span></div>
+          <div class="field half"><label for="ct-cognome">Cognome</label><input id="ct-cognome" name="cognome" autocomplete="family-name" required /><span class="err"></span></div>
+          <div class="field half"><label for="ct-tel">Telefono <small>· facoltativo</small></label><input id="ct-tel" name="telefono" type="tel" inputmode="tel" autocomplete="tel" /><span class="err"></span></div>
+          <div class="field half"><label for="ct-mail">Email</label><input id="ct-mail" name="email" type="email" autocomplete="email" required /><span class="err"></span></div>
+          <div class="field">
+            <span class="ct-label" id="ct-topic-l">Di cosa vuoi parlarci?</span>
+            <div class="ct-topics" role="radiogroup" aria-labelledby="ct-topic-l">
+              <label><input type="radio" name="argomento" value="info" checked /><span>Informazioni</span></label>
+              <label><input type="radio" name="argomento" value="ordini" /><span>Ordini ed eventi</span></label>
+              <label><input type="radio" name="argomento" value="locali" /><span>Per il tuo locale</span></label>
+              <label><input type="radio" name="argomento" value="altro" /><span>Altro</span></label>
+            </div>
+          </div>
+          <div class="field"><label for="ct-msg">Messaggio</label><textarea id="ct-msg" name="messaggio" rows="5" required></textarea><span class="err"></span></div>
+          <div class="field"><label class="check"><input type="checkbox" name="privacy" required /><span>Ho letto l'informativa sulla privacy e acconsento al trattamento dei dati per ricevere una risposta.</span></label><span class="err"></span></div>
+        </div>
+        <button class="btn btn--solid magnetic ct-send" type="submit"><span>Invia il messaggio</span></button>
+        <p class="ct-note">Demo: il modulo non invia dati a nessuno.</p>
+        <div class="ct-done" hidden>
+          <p class="s-eyebrow">Messaggio ricevuto</p>
+          <p class="ct-done-t">Grazie, <span id="ct-done-name"></span>. <i class="script">A presto.</i></p>
+          <p class="ct-lead">Ti rispondiamo all'indirizzo che ci hai lasciato, nei giorni lavorativi dalle 10 alle 18.</p>
+          <button class="btn btn--ghost magnetic" type="button" id="ct-again"><span>Scrivi un altro messaggio</span></button>
+        </div>
+      </form>
+
+      <aside class="ct-info" aria-label="Recapiti">
+        <dl class="ct-list">
+          <div data-reveal style="--d:4"><dt>Indirizzo</dt><dd><a href="https://www.google.com/maps/search/?api=1&query=Via+Marina+Negrini+15+25050+Ome+BS" target="_blank" rel="noopener">Via Marina Negrini 15<br />25050 Ome (BS)</a><small>Franciacorta, a due passi dal Lago d'Iseo</small></dd></div>
+          <div data-reveal style="--d:5"><dt>Telefono</dt><dd><a href="tel:+393392366963">339 2366963</a></dd></div>
+          <div data-reveal style="--d:6"><dt>Email</dt><dd><a href="mailto:info@gincana.it">info@gincana.it</a></dd></div>
+          <div data-reveal style="--d:7"><dt>Orari</dt><dd>Lunedì – Venerdì<br />10:00 – 18:00</dd></div>
+          <div data-reveal style="--d:8"><dt>Seguici</dt><dd><a href="https://www.instagram.com/gincana.londondrygin/" target="_blank" rel="noopener">Instagram<small>@gincana.londondrygin</small></a></dd></div>
+        </dl>
+        <figure class="ct-photo" data-reveal style="--d:9"><img src="shop/pd-aperitivo.webp" alt="Aperitivo tra amici con Gincana" loading="lazy" /><figcaption>Gincana ha trovato casa: chiedici dove berlo vicino a te.</figcaption></figure>
+      </aside>
+    </section>
+  </main>
+
+  <footer class="s-footer" aria-label="Informazioni">
+    <div class="footer-inner">
+      <div class="f-brand"><span class="foil f-word">GINCANA</span><p>Premium London Dry Gin · Lago Sebino · Italy</p><p class="f-quote">«L'eleganza della semplicità»</p></div>
+      <div><h3>Contatti</h3><p><a href="mailto:info@gincana.it">info@gincana.it</a><br /><a href="tel:+393392366963">339 2366963</a><br />Lun–Ven 10:00–18:00</p></div>
+      <div><h3>Seguici</h3><p><a href="https://www.instagram.com/gincana.londondrygin/" target="_blank" rel="noopener">Instagram · @gincana.londondrygin</a><br /><a href="prodotto.html?p=gin-50">Acquista ora</a></p></div>
+      <div class="f-legal">
+        <p>MB di Bulgari Michele · Via Marina Negrini 15, 25050 Ome (BS) · P.IVA 04263660989</p>
+        <p>Prodotto per distillazione ed imbottigliato nello stabilimento di Via Trento 90, 20821 Meda (MB).</p>
+        <p><b>Bevi responsabilmente.</b> Vendita riservata ai maggiori di 18 anni. Questo sito è una demo: nessun messaggio o ordine viene inviato.</p>
+      </div>
+    </div>
+  </footer>
+
+  <div class="cursor" aria-hidden="true"><span></span></div>
+</body>
+</html>
