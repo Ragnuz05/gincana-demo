@@ -3,6 +3,7 @@
 <head>
   <meta name="robots" content="noindex, nofollow" />
   <meta charset="utf-8" />
+  <script>try{if(sessionStorage.getItem("gc-pt"))document.documentElement.setAttribute("data-pt","");if(sessionStorage.getItem("gincana:18"))document.documentElement.setAttribute("data-age-ok","")}catch(e){}</script>
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
   <title>Gincana · Premium London Dry Gin · Lago Sebino</title>
   <meta name="description" content="Gincana, Premium London Dry Gin italiano ispirato al Lago Sebino. Un viaggio nel gusto, sorso dopo sorso." />
@@ -11,9 +12,9 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600&family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400;1,500&family=Pinyon+Script&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet" />
-  <script type="module" crossorigin src="./assets/index-DzvvPpl0.js"></script>
-  <link rel="modulepreload" crossorigin href="./assets/cart-b-M30L6Y.js">
-  <link rel="stylesheet" crossorigin href="./assets/cart-BLP0SLse.css">
+  <script type="module" crossorigin src="./assets/index-CFkUfwE6.js"></script>
+  <link rel="modulepreload" crossorigin href="./assets/cart-BqSB-6ja.js">
+  <link rel="stylesheet" crossorigin href="./assets/cart-jaCTbZJq.css">
 </head>
 <body data-tone="dark" data-variant="editoriale">
   <canvas id="scene" aria-hidden="true"></canvas>
@@ -28,6 +29,7 @@
       <a href="#" data-goto="0" aria-current="page">Il gin</a><a href="#" data-goto="1">Il lago</a><a href="#" data-goto="2">Botaniche</a><a href="#" data-goto="3">Gin Tonic</a><a href="#" data-goto="4">Formati</a>
     </nav>
     <div class="header-right">
+      <div class="lang-switch" data-lang-switch role="group" aria-label="Lingua"></div>
       <a class="header-link link-line" href="contatti.html">Contatti</a>
       <a class="header-link link-line h-buy" href="prodotto.html?p=gin-50">Acquista ora</a>
       <button class="cart-btn" type="button" data-cart-open aria-label="Apri il carrello"><svg class="cart-ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 8h14l-1.2 11.2a1 1 0 0 1-1 .8H7.2a1 1 0 0 1-1-.8L5 8Z"/><path d="M9 10V6.5a3 3 0 0 1 6 0V10"/></svg><span class="cart-label">Carrello</span><span class="cart-count" data-cart-count>0</span></button>
@@ -131,7 +133,7 @@
   <nav class="dots" aria-label="Capitoli" inert><ol id="dots"></ol></nav>
   <div class="hint" id="hint" aria-hidden="true"><span class="hint-line"></span>Scorri</div>
   <div class="swipe-hint" aria-hidden="true"><span>Scorri</span><i></i></div>
-  <div class="bot-spots" id="bot-spots" aria-hidden="true"><p class="bot-tip" id="bot-tip"></p></div>
+  <div class="bot-spots" id="bot-spots" aria-hidden="true"><p class="bot-tip" id="bot-tip"></p><p class="bot-hint"><i></i><span class="hint-fine">Passa il mouse su una botanica: ti diciamo come si chiama</span><span class="hint-touch">Tocca una botanica per scoprire come si chiama</span></p></div>
   <p class="responsible" aria-hidden="true">Bevi responsabilmente</p>
 
   <div class="controls" inert>
@@ -198,6 +200,7 @@
         </nav>
         <p><a href="contatti.html">Contatti</a><br /><a href="mailto:info@gincana.it">info@gincana.it</a><br /><a href="https://www.instagram.com/gincana.londondrygin/" target="_blank" rel="noopener">Instagram</a></p>
         <p class="menu-note">Spedizione gratuita sopra €150</p>
+        <div class="lang-switch" data-lang-switch role="group" aria-label="Lingua"></div>
       </aside>
     </div>
     <button class="menu-close" type="button" id="menu-close" aria-label="Chiudi il menu"><span>Chiudi</span></button>
@@ -222,6 +225,7 @@
           <p id="age-q" class="age-q">Hai almeno 18 anni?</p>
           <div class="age-actions"><button class="btn btn--solid" id="enter"><span>Sì, entra</span></button></div>
           <button class="age-no" id="underage">No, non ancora</button>
+          <div class="lang-switch lang-switch--gate" data-lang-switch role="group" aria-label="Lingua"></div>
           <p class="age-msg">Ci vediamo quando sarai maggiorenne. Gincana si beve responsabilmente.</p>
         </div>
       </div>
@@ -230,6 +234,6 @@
 
   <div class="grain" aria-hidden="true"></div>
   <canvas class="trail" aria-hidden="true"></canvas>
-  <div class="cursor" aria-hidden="true"><span></span></div>
+  <div class="cursor" aria-hidden="true"><span></span></div>
 </body>
 </html>
