@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1000" role="img" aria-label="Marmellata Gincana, barattolo da 220 g">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="42%" r="70%">
+      <stop offset="0" stop-color="#1d261d"/>
+      <stop offset="0.6" stop-color="#121812"/>
+      <stop offset="1" stop-color="#0b0f0b"/>
+    </radialGradient>
+    <linearGradient id="gold" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#8d7334"/>
+      <stop offset="0.32" stop-color="#c2a55a"/>
+      <stop offset="0.5" stop-color="#fff1c8"/>
+      <stop offset="0.68" stop-color="#d8bb72"/>
+      <stop offset="1" stop-color="#8d7334"/>
+    </linearGradient>
+    <linearGradient id="jam" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#b8601f"/>
+      <stop offset="0.55" stop-color="#8a3d14"/>
+      <stop offset="1" stop-color="#5a250b"/>
+    </linearGradient>
+    <linearGradient id="glass" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#fff" stop-opacity="0.16"/>
+      <stop offset="0.18" stop-color="#fff" stop-opacity="0.04"/>
+      <stop offset="0.8" stop-color="#fff" stop-opacity="0.02"/>
+      <stop offset="0.92" stop-color="#fff" stop-opacity="0.14"/>
+      <stop offset="1" stop-color="#fff" stop-opacity="0.04"/>
+    </linearGradient>
+    <linearGradient id="label" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#34433a"/>
+      <stop offset="1" stop-color="#243026"/>
+    </linearGradient>
+    <clipPath id="jar"><path d="M238 330 Q238 300 268 296 H532 Q562 300 562 330 V800 Q562 846 516 846 H284 Q238 846 238 800 Z"/></clipPath>
+  </defs>
+  <rect width="800" height="1000" fill="url(#bg)"/>
+  <!-- marmo -->
+  <path d="M0 860 H800 V1000 H0 Z" fill="#141813"/>
+  <path d="M0 860 H800" stroke="#c2a55a" stroke-opacity=".35" stroke-width="1.5"/>
+  <path d="M60 900 C200 880 260 960 420 930 S700 900 790 950" fill="none" stroke="#f4f0e6" stroke-opacity=".06" stroke-width="2"/>
+  <path d="M0 950 C140 930 300 990 520 965" fill="none" stroke="#f4f0e6" stroke-opacity=".05" stroke-width="1.5"/>
+  <!-- ombra -->
+  <ellipse cx="400" cy="858" rx="200" ry="16" fill="#000" opacity=".55"/>
+  <!-- marmellata dentro -->
+  <g clip-path="url(#jar)">
+    <rect x="230" y="380" width="340" height="480" fill="url(#jam)"/>
+    <path d="M230 384 Q320 372 400 384 T570 380 V392 H230 Z" fill="#d07a30" opacity=".6"/>
+    <circle cx="300" cy="700" r="5" fill="#e09a4a" opacity=".35"/>
+    <circle cx="470" cy="610" r="4" fill="#e09a4a" opacity=".3"/>
+    <circle cx="420" cy="770" r="6" fill="#e09a4a" opacity=".25"/>
+    <rect x="230" y="296" width="340" height="560" fill="url(#glass)"/>
+  </g>
+  <!-- vetro -->
+  <path d="M238 330 Q238 300 268 296 H532 Q562 300 562 330 V800 Q562 846 516 846 H284 Q238 846 238 800 Z" fill="none" stroke="#f4f0e6" stroke-opacity=".38" stroke-width="2"/>
+  <path d="M262 340 V780" stroke="#fff" stroke-opacity=".22" stroke-width="6" stroke-linecap="round"/>
+  <!-- coperchio oro -->
+  <rect x="250" y="226" width="300" height="78" rx="10" fill="url(#gold)"/>
+  <g stroke="#6f5a26" stroke-opacity=".45" stroke-width="2">
+    <path d="M270 232 V298"/><path d="M290 232 V298"/><path d="M310 232 V298"/><path d="M330 232 V298"/><path d="M350 232 V298"/><path d="M370 232 V298"/><path d="M390 232 V298"/><path d="M410 232 V298"/><path d="M430 232 V298"/><path d="M450 232 V298"/><path d="M470 232 V298"/><path d="M490 232 V298"/><path d="M510 232 V298"/><path d="M530 232 V298"/>
+  </g>
+  <rect x="250" y="226" width="300" height="12" rx="6" fill="#fff4d2" opacity=".45"/>
+  <!-- etichetta: ovale verde con doppio filetto oro, come quella del gin -->
+  <rect x="262" y="470" width="276" height="250" rx="6" fill="url(#label)"/>
+  <ellipse cx="400" cy="595" rx="118" ry="104" fill="none" stroke="url(#gold)" stroke-width="2.4"/>
+  <ellipse cx="400" cy="595" rx="108" ry="94" fill="none" stroke="url(#gold)" stroke-width="1"/>
+  <text x="400" y="548" text-anchor="middle" font-family="Cinzel, serif" font-size="13" letter-spacing="3.5" fill="#d8bb72">MARMELLATA</text>
+  <text x="400" y="602" text-anchor="middle" font-family="Cinzel, serif" font-size="34" font-weight="600" letter-spacing="3" fill="url(#gold)">GINCANA</text>
+  <path d="M332 618 H468" stroke="#c2a55a" stroke-width="1"/>
+  <text x="400" y="644" text-anchor="middle" font-family="Cinzel, serif" font-size="12" letter-spacing="3" fill="#d8bb72">LAGO SEBINO</text>
+  <text x="400" y="668" text-anchor="middle" font-family="Cormorant Garamond, serif" font-style="italic" font-size="16" fill="#e8dcb8">220 g</text>
+  <!-- filo dello spago -->
+  <path d="M252 306 C300 326 500 326 548 306" fill="none" stroke="#d8bb72" stroke-opacity=".7" stroke-width="1.6"/>
+  <path d="M520 316 C540 360 528 392 506 410" fill="none" stroke="#d8bb72" stroke-opacity=".7" stroke-width="1.4"/>
+  <rect x="482" y="404" width="44" height="58" rx="4" fill="#f4f0e6" transform="rotate(-12 504 433)"/>
+  <text x="504" y="440" text-anchor="middle" font-family="Pinyon Script, cursive" font-size="20" fill="#2c382c" transform="rotate(-12 504 433)">gin</text>
+</svg>
