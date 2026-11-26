@@ -11,9 +11,9 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600&family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400;1,500&family=Pinyon+Script&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet" />
-  <script type="module" crossorigin src="./assets/index-lC21EJOC.js"></script>
-  <link rel="modulepreload" crossorigin href="./assets/cart-DijmCWUn.js">
-  <link rel="stylesheet" crossorigin href="./assets/cart-B24Q8tGm.css">
+  <script type="module" crossorigin src="./assets/index-BZyjynhx.js"></script>
+  <link rel="modulepreload" crossorigin href="./assets/cart-b-M30L6Y.js">
+  <link rel="stylesheet" crossorigin href="./assets/cart-BLP0SLse.css">
 </head>
 <body data-tone="dark" data-variant="editoriale">
   <canvas id="scene" aria-hidden="true"></canvas>
@@ -178,14 +178,14 @@
 
   <div class="menu" id="menu" role="dialog" aria-modal="true" aria-label="Menu" hidden>
     <div class="menu-bg" aria-hidden="true"></div>
-    <figure class="menu-peek" aria-hidden="true"><img alt="" src="lab/bottiglia.jpg" /></figure>
     <div class="menu-inner">
-      <nav class="menu-list" aria-label="Capitoli">
-        <a href="#" data-menu-goto="0" data-peek="lab/bottiglia.jpg"><span class="m-n">01</span><span class="m-t">La bottiglia</span></a>
-        <a href="#" data-menu-goto="1" data-peek="lab/lago.jpg"><span class="m-n">02</span><span class="m-t">Il lago</span></a>
-        <a href="#" data-menu-goto="2" data-peek="lab/botaniche.jpg"><span class="m-n">03</span><span class="m-t">Le botaniche</span></a>
-        <a href="#" data-menu-goto="3" data-peek="lab/gintonic.jpg"><span class="m-n">04</span><span class="m-t">Gin Tonic</span></a>
-        <a href="#" data-menu-goto="4" data-peek="lab/formati.jpg"><span class="m-n">05</span><span class="m-t">I formati</span></a>
+      <!-- menu (26/11): si compra e si contatta, niente capitoli e niente immagini che seguono il cursore -->
+      <nav class="menu-list" aria-label="Acquista e contatti">
+        <a href="prodotto.html?p=gin-50"><span class="m-n">01</span><span class="m-t">London Dry Gin</span><span class="m-p">50 cl · €35</span></a>
+        <a href="prodotto.html?p=gin-20"><span class="m-n">02</span><span class="m-t">London Dry Gin</span><span class="m-p">20 cl · €22</span></a>
+        <a href="prodotto.html?p=marmellata"><span class="m-n">03</span><span class="m-t">Marmellata</span><span class="m-p">220 g · €16</span></a>
+        <button type="button" class="menu-cart"><span class="m-n">04</span><span class="m-t">Il tuo carrello</span><span class="m-p" data-cart-count></span></button>
+        <a href="contatti.html"><span class="m-n">05</span><span class="m-t">Contatti</span><span class="m-p">Scrivici</span></a>
       </nav>
       <aside class="menu-side">
         <a class="menu-shop" href="prodotto.html?p=gin-50"><span>Acquista ora</span><i class="script">London Dry Gin</i></a>
@@ -194,7 +194,7 @@
           <a href="prodotto.html?p=gin-50"><span class="m-t">London Dry Gin</span><small>50 cl · €35</small></a>
           <a href="prodotto.html?p=gin-20"><span class="m-t">London Dry Gin</span><small>20 cl · €22</small></a>
           <a href="prodotto.html?p=marmellata"><span class="m-t">Marmellata</span><small>220 g · €16</small></a>
-          <button type="button" id="menu-cart"><span class="m-t">Il tuo carrello</span><small data-cart-count></small></button>
+          <button type="button" class="menu-cart"><span class="m-t">Il tuo carrello</span><small data-cart-count></small></button>
         </nav>
         <p><a href="contatti.html">Contatti</a><br /><a href="mailto:info@gincana.it">info@gincana.it</a><br /><a href="https://www.instagram.com/gincana.londondrygin/" target="_blank" rel="noopener">Instagram</a></p>
         <p class="menu-note">Spedizione gratuita sopra €150</p>
